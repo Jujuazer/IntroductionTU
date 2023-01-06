@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class HealthPotion : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] int _health = 50;
+    [SerializeField] EntityHealth _entityHealth;
+    public int RestaureHealth { get { return _health; } private set { _health = value; } }
+    public void use()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _entityHealth.RestaureHealth(RestaureHealth);
     }
 }

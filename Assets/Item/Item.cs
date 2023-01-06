@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //int _price = 0;
+    public void pick()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public void drop()
     {
-        
+
     }
 }

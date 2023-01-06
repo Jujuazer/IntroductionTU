@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PowerUp : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] int _powerUp = 10;
+    [SerializeField] EntityHealth _entityHealth;
 
-    // Update is called once per frame
-    void Update()
+    public int ExtendHealth { get { return _powerUp; } private set { _powerUp = value; } }
+
+    public void use()
     {
-        
+        _entityHealth.ExtendMaxHealth(ExtendHealth);
     }
 }

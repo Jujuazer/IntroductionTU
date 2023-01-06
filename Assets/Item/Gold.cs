@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Gold : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    int _gold = 1;
+    [SerializeField] EntityGold _entityGold;
+    public int Money { get { return _gold; } private set { _gold = value; } }
+    public void use()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _entityGold.AddGold(Money);
+        Destroy(gameObject);
     }
 }

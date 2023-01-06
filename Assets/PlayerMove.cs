@@ -96,7 +96,9 @@ public class PlayerMove : MonoBehaviour
         Debug.Log($"Stop Move : {obj.ReadValue<Vector2>()}");
     }
 
-
-
-
+    Item item;
+    private void OnTriggerEnter(Collider other)
+    {
+        item.pick();
+    }
 }
