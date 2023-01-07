@@ -922,6 +922,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 792663629}
     m_Modifications:
+    - target: {fileID: -5947771223580394899, guid: 8cbcc73477c16c545804b189e6229774,
+        type: 3}
+      propertyPath: _entityHealth
+      value: 
+      objectReference: {fileID: 1349007869}
     - target: {fileID: 97553736113787560, guid: 8cbcc73477c16c545804b189e6229774,
         type: 3}
       propertyPath: m_RootOrder
@@ -1802,6 +1807,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 792663629}
     m_Modifications:
+    - target: {fileID: 4441928871813012542, guid: df17769e7a3d8134d8ac027e1df9461e,
+        type: 3}
+      propertyPath: _entityGold
+      value: 
+      objectReference: {fileID: 1349007870}
     - target: {fileID: 7068944266405786497, guid: df17769e7a3d8134d8ac027e1df9461e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2587,6 +2597,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7700284095180167991, guid: 0c807365b9687b644a173a505dba58bb,
+        type: 3}
+      propertyPath: _entityHealth
+      value: 
+      objectReference: {fileID: 1349007869}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c807365b9687b644a173a505dba58bb, type: 3}
 --- !u!4 &1915564915 stripped

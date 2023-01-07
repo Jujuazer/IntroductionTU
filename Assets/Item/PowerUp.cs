@@ -9,8 +9,12 @@ public class PowerUp : Item
 
     public int ExtendHealth { get { return _powerUp; } private set { _powerUp = value; } }
 
-    public void use()
+    public override void Use()
     {
+        base.Use();
         _entityHealth.ExtendMaxHealth(ExtendHealth);
+        Destroy(gameObject);
     }
+
+    
 }

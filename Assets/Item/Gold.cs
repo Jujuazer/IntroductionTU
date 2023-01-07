@@ -7,8 +7,10 @@ public class Gold : Item
     int _gold = 1;
     [SerializeField] EntityGold _entityGold;
     public int Money { get { return _gold; } private set { _gold = value; } }
-    public void use()
+
+    public override void Use()
     {
+        base.Use();
         _entityGold.AddGold(Money);
         Destroy(gameObject);
     }
