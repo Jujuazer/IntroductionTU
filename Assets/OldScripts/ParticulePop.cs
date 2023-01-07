@@ -18,7 +18,7 @@ public class ParticulePop : MonoBehaviour
     private void Start()
     {
         //_playerMove.OnStartMove += _playerMove_OnStartMove;
-        _playerMove.OnHealthUpdate += EXPLOISION;
+        //_playerMove.OnHealthUpdate += EXPLOISION;
     }
 
     private void EXPLOISION(int obj)
