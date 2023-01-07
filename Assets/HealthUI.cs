@@ -24,6 +24,7 @@ public class HealthUI : MonoBehaviour
     private void UpdateSlider(float newHealthValue, float newMaxHealth)
     {
         _slider.value = newHealthValue;
+        _slider.maxValue = newMaxHealth;
         _text.text = $"{newHealthValue} / {newMaxHealth}";
     }
 

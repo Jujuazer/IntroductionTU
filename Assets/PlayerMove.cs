@@ -53,10 +53,13 @@ public class PlayerMove : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
 
+
             // Undo commentary for fun :)
-/*          float singleStep = _speed * Time.fixedDeltaTime;
+/*
+            float singleStep = _speed * Time.fixedDeltaTime;
             transform.position = Vector3.RotateTowards(transform.position, new Vector3(JoystickDirection.x, 0, JoystickDirection.y), singleStep, 0f);
 */
+
             //move in joystick direction
             transform.Translate(new Vector3(JoystickDirection.x, 0, JoystickDirection.y) * _speed * Time.fixedDeltaTime);
 
@@ -84,11 +87,15 @@ public class PlayerMove : MonoBehaviour
     }
 
     
+    // check if an item and use the effect of the item
     private void OnTriggerEnter(Collider other)
     {
-        Item a  = other.gameObject.GetComponent<Item>();
-        Debug.Log(a);
-        a.Use();
+        if (other.gameObject.GetComponent<Item>() != null)
+        {
+            Item a  = other.gameObject.GetComponent<Item>();
+            a.Use();
+        }
+
     }
     //called when joystick or (zqsd) is released
     private void StopMove(InputAction.CallbackContext obj)
