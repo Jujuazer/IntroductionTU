@@ -6,6 +6,9 @@ public class Item : MonoBehaviour
 {
 
     public virtual void Use()
+    {
+        
+    }
     
     // Start is called before the first frame update
     void Start()

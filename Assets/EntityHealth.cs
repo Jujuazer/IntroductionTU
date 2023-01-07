@@ -34,6 +34,7 @@ public class EntityHealth : MonoBehaviour
     public void ExtendMaxHealth(int bonus)
     {
         MaxHealth += bonus;
+    }
 
     public virtual void TakeDamage (float amount)
     {
